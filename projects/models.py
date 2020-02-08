@@ -7,5 +7,8 @@ class Project(models.Model):
     technology = models.CharField(max_length=20)
     image = models.CharField(max_length=100)
 
+    def __str__(self):
+        # Str to represent model name
+        return self.title 
 
  
